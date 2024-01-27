@@ -67,7 +67,7 @@ export const HeroButton = styled.button`
     margin-top: 2em;
     padding: 1em;
 
-    border: 0;
+    border: 1px solid transparent;
     border-radius: .25em;
 
     background: #F8B396;
@@ -76,5 +76,14 @@ export const HeroButton = styled.button`
 
     cursor: pointer;
 
+    transition: all 300ms ease-in-out;
 
+
+    &:hover {
+        border-color: #F8B396;
+
+        background: #F8B39650;
+
+        color: #F4E3B7;
+    }
 `;
