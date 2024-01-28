@@ -12,7 +12,7 @@ export default function Hero() {
                 <S.HeroApresentation>
                     <S.HeroTitle>Studio Unah Yoga</S.HeroTitle>
                     <S.HeroSubtitle>Olhe para dentro e encontre o universo</S.HeroSubtitle>
-                    <S.HeroButton>Entre em contato</S.HeroButton>
+                    <S.HeroButton>Saiba Mais</S.HeroButton>
                 </S.HeroApresentation>
 
                 <S.HeroImage>
