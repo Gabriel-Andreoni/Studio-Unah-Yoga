@@ -9,6 +9,12 @@ export const AboutWrapper = styled.div`
     display: flex;
 
     background: #f4e3b7;
+
+    @media (max-width: 480px) {
+        height: auto;
+
+        flex-direction: column;
+    }
 `;
 
 export const AboutContent = styled.section`
@@ -21,6 +27,12 @@ export const AboutContent = styled.section`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    @media (max-width: 480px) {
+        width: 100%;
+
+        order: 1;
+    }
 
 `;
 
@@ -49,6 +61,10 @@ export const AboutTitle = styled.h2`
         border-radius: .25em;
 
         background: #ee2270;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2.5em;
     }
 `;
 
@@ -81,4 +97,15 @@ export const AboutImage = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 480px) {
+        width: 100%;
+
+        order: 0;
+    }
+
+    & > img {
+        width: 300px;
+        height: 300px;
+    }
 `;
