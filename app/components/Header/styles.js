@@ -51,9 +51,13 @@ export const ContactButton = styled.button`
 
     transition: all 300ms ease-in-out;
 
+    outline: 1px solid #F8B396;
+
     cursor: pointer;
 
     &:hover {
+        outline-offset: 5px;
+        
         border-color: #F8B396;
 
         background: #F8B39650;

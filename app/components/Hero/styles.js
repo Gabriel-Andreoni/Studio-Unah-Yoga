@@ -86,5 +86,7 @@ export const HeroButton = styled.button`
         outline-offset: 5px;
 
         background: #F8B39690;
+
+        color: #F4E3B7;
     }
 `;
