@@ -13,10 +13,39 @@ export const Header = styled.header`
 
     box-shadow: 0 0 5px #00000050;
 
+    @media (max-width: 480px) {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
 `;
 
 export const Navigation = styled.nav`
     width: 40%;
+
+    @media (max-width:480px) {
+        width: 100%; 
+        display: ${props => props.display};
+
+        margin: 0 auto;
+
+        position: absolute;
+        top: 20%;
+        right:0;
+        bottom: 0;
+        left: 0;
+
+        background: #5D9EA2;
+
+        z-index: 999;
+
+        & > ul {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+        }
+    }
 `;
 
 export const Menu = styled.ul`
@@ -37,6 +66,19 @@ export const MenuItem = styled.li`
     color: #F4E3B7;
     
     cursor: pointer;
+
+    @media (max-width: 480px) {
+        font-size: 2em;
+
+        padding: .2em;
+
+        border-radius: .25em;
+
+        &:hover {
+            background: #F4E3B7;
+            color: #5D9EA2;
+        }
+    }
 `;
 
 export const ContactButton = styled.button`
@@ -63,6 +105,26 @@ export const ContactButton = styled.button`
         background: #F8B39650;
 
         color: #F4E3B7;
+    }
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+`;
+
+export const MenuBurguer = styled.button`
+    width: fit-content;
+    padding: 1em;
+
+    display: none;
+
+    border: 0;
+    border-radius: .25em;
+
+    background: #F8B396;
+
+    @media (max-width: 480px) {
+        display: block;
     }
 
 `;
