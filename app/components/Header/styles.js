@@ -70,6 +70,7 @@ export const MenuItem = styled.li`
     @media (max-width: 480px) {
         font-size: 2em;
 
+        padding-top: 2em;
         padding: .2em;
 
         border-radius: .25em;
