@@ -43,7 +43,7 @@ export const Navigation = styled.nav`
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 2em;
+            gap: 1em;
         }
     }
 `;
