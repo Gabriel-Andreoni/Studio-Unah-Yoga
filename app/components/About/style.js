@@ -25,9 +25,12 @@ export const AboutContent = styled.section`
 `;
 
 export const AboutTitle = styled.h2`
+    width: 100%;
+
     margin-top: 1em;
 
     font-size: 4em;
+    text-align: left;
 
     position: relative;
 
@@ -59,7 +62,7 @@ export const AboutText = styled.p`
 export const SocialMediaContainer = styled.span`
     width: 80%;
 
-    padding-top: 1em;
+    padding-top: 3em;
 
     
     display: flex;
