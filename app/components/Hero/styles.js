@@ -4,7 +4,7 @@ export const HeroWrapper = styled.div`
     width: 100%;
     height: 100vh;
 
-    background: #5D9EA2;
+    background: #A1AA7F;
 `;
 
 export const HeroContainer = styled.div`
@@ -57,7 +57,9 @@ export const HeroTitle = styled.h1`
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 6em;
+    font-size: 5em;
+
+    text-transform: uppercase;
 
     color: #F4E3B7;
 
@@ -76,7 +78,9 @@ export const HeroSubtitle = styled.h2`
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.5em;
+    
+    text-transform: uppercase;
 
     color: #F4E3B7;
 
