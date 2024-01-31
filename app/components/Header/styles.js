@@ -63,7 +63,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
     font-size: 1.3em;
 
-    color: #F4E3B7;
+    color: #fff;
     
     cursor: pointer;
 
