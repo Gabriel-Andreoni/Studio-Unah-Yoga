@@ -3,20 +3,20 @@ import * as S from './styles';
 const services = [
     {
         id: 1,
-        title: 'Yoga Ativo',
+        title: 'Atividade?',
         subtitle: 'Yoga Ativo',
         description: 'Para os que buscam se desafiar. Proposta de meditação em movimento, unindo posturas e respiração. Aprimora o corpo físico, a capacidade respiratória e sendo de autoconfiança.'
     },
 
     {
         id: 2,
-        title: 'Yoga Presente',
+        title: 'Presença?',
         subtitle: 'Yoga Presente',
         description: 'Ideal para iniciantes. Proposta de pausa e presença, posturas que trazem consciência de si, sintoniza corpo e mente. Podendo ser desafiador e aterrado.'
     },
     {
         id: 3,
-        title: 'Yoga Tranquilo',
+        title: 'Relaxamento?',
         subtitle: 'Yoga Tranquilo',
         description: 'Para quem deseja desacelerar e se reconectar. Menos posturas, quietude e voltando para a restauração do corpo, da mente e das emoções.'
     },
