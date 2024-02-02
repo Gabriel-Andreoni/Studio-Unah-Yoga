@@ -52,16 +52,15 @@ export const HeroImage = styled.section`
 `;
 
 export const HeroTitle = styled.h1`
-    margin-top: 1em;
+    margin-top: .3em;
 
-    font-family: "Dancing Script", cursive;
+    font-family: 'Carattere', cursive;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 5em;
+    font-size: 8em;
 
-    text-transform: uppercase;
 
-    color: #F4E3B7;
+    color: #fad4a0;
 
     @media (max-width: 480px) {
         margin-top: 0;
@@ -75,14 +74,12 @@ export const HeroTitle = styled.h1`
 export const HeroSubtitle = styled.h2`
     margin-top: 1em;
 
-    font-family: "Dancing Script", cursive;
+    font-family: 'Carattere', cursive;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 1.5em;
-    
-    text-transform: uppercase;
+    font-size: 2.5em;
 
-    color: #F4E3B7;
+    color: #fad4a0;
 
     @media (max-width: 480px) {
         font-size: 1.5em;
@@ -100,7 +97,7 @@ export const HeroButton = styled.button`
     border: 1px solid transparent;
     border-radius: .25em;
 
-    background: #F8B396;
+    background: #fad4a0;;
 
     font-size: 1.20em;
 
@@ -108,14 +105,14 @@ export const HeroButton = styled.button`
 
     transition: all 300ms ease;
 
-    outline: 1px solid #F8B396;
+    outline: 1px solid #fad4a0;
 
     &:hover {
         outline-offset: 5px;
 
-        background: #F8B39690;
+        background: #fad4a090;
 
-        color: #F4E3B7;
+        color: #fad4a0;
     }
 
     @media (max-width: 480px) {

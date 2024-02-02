@@ -8,7 +8,7 @@ export const AboutWrapper = styled.div`
 
     display: flex;
 
-    background: #f4e3b7;
+    background: #fad4a0;
 
     @media (max-width: 480px) {
         height: auto;
@@ -60,7 +60,7 @@ export const AboutTitle = styled.h2`
 
         border-radius: .25em;
 
-        background: #ee2270;
+        background: #A1AA7F;
     }
 
     @media (max-width: 480px) {

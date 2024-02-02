@@ -5,7 +5,7 @@ export const Header = styled.header`
     height: 20vh;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     border-bottom-left-radius: 1em;
@@ -21,7 +21,7 @@ export const Header = styled.header`
 `;
 
 export const Navigation = styled.nav`
-    width: 40%;
+    width: 60%;
 
     @media (max-width:480px) {
         width: 100%; 
@@ -35,7 +35,7 @@ export const Navigation = styled.nav`
         bottom: 0;
         left: 0;
 
-        background: #5D9EA2;
+        background: #fad4a0;
 
         z-index: 999;
 
@@ -61,9 +61,10 @@ export const Menu = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-    font-size: 1.3em;
+    font-family: 'Carattere', cursive;
+    font-size: 2em;
 
-    color: #fff;
+    color: #fad4a0;
     
     cursor: pointer;
 
@@ -75,10 +76,7 @@ export const MenuItem = styled.li`
 
         border-radius: .25em;
 
-        &:hover {
-            background: #F4E3B7;
-            color: #5D9EA2;
-        }
+        color: #A1AA7F;
     }
 `;
 
@@ -90,20 +88,20 @@ export const ContactButton = styled.button`
     border: 1px solid transparent;
     border-radius: .25em;
 
-    background: #F8B396;
+    background: #fad4a0;
 
     transition: all 300ms ease-in-out;
 
-    outline: 1px solid #F8B396;
+    outline: 1px solid #fad4a0;
 
     cursor: pointer;
 
     &:hover {
         outline-offset: 5px;
         
-        border-color: #F8B396;
+        border-color: #fad4a0;
 
-        background: #F8B39650;
+        background: #fad4a050;
 
         color: #F4E3B7;
     }
