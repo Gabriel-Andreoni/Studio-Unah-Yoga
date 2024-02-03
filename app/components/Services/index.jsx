@@ -47,23 +47,21 @@ const extraServices = [
 
 export default function Services() {
     return (
-        <>
-            <ul>
+        <S.ServicesContainer>
+            <S.ServicesTitle>Serviços</S.ServicesTitle>
+
+            <S.ServicesList>
                 {services.map((service) => {
                     return (
-                        <li key={service.id}>
-                            <div>
-                                <h1>{service.title}</h1>
-                                <h2>{service.subtitle}</h2>
-                            </div>
-
-                            <div>
-                                <p>{service.description}</p>
-                            </div>
-                        </li>
+                        <S.ServiceListItem key={service.id}>
+                            <S.ServiceItemTitle>{service.title}</S.ServiceItemTitle>
+                            <S.ServiceItemSubtitle>{service.subtitle}</S.ServiceItemSubtitle>
+                            <S.ServiceItemText>{service.description}</S.ServiceItemText>
+                        </S.ServiceListItem>
                     )
                 })}
-            </ul>
-        </>
+            </S.ServicesList>
+           
+        </S.ServicesContainer>
     )
 }
