@@ -4,7 +4,7 @@ export const HeroWrapper = styled.div`
     width: 100%;
     height: 100vh;
 
-    background: #A1AA7F;
+    background: #f4f4f4;
 `;
 
 export const HeroContainer = styled.div`
@@ -56,11 +56,11 @@ export const HeroTitle = styled.h1`
 
     font-family: 'Carattere', cursive;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 8em;
 
 
-    color: #fad4a0;
+    color: #A1AA7F;
 
     @media (max-width: 480px) {
         margin-top: 0;
@@ -79,7 +79,7 @@ export const HeroSubtitle = styled.h2`
     font-weight: 400;
     font-size: 2.5em;
 
-    color: #fad4a0;
+    color: #A1AA7F;
 
     @media (max-width: 480px) {
         font-size: 1.5em;
@@ -97,7 +97,7 @@ export const HeroButton = styled.button`
     border: 1px solid transparent;
     border-radius: .25em;
 
-    background: #fad4a0;;
+    background: #A1AA7F;
 
     font-size: 1.20em;
 
@@ -105,14 +105,14 @@ export const HeroButton = styled.button`
 
     transition: all 300ms ease;
 
-    outline: 1px solid #fad4a0;
+    outline: 1px solid #A1AA7F;
 
     &:hover {
         outline-offset: 5px;
 
-        background: #fad4a090;
+        background: #A1AA7F90;
 
-        color: #fad4a0;
+        color: #A1AA7F;
     }
 
     @media (max-width: 480px) {

@@ -35,7 +35,7 @@ export const Navigation = styled.nav`
         bottom: 0;
         left: 0;
 
-        background: #fad4a0;
+        background: #A1AA7F;
 
         z-index: 999;
 
@@ -64,7 +64,7 @@ export const MenuItem = styled.li`
     font-family: 'Carattere', cursive;
     font-size: 2em;
 
-    color: #fad4a0;
+    color: #A1AA7F;
     
     cursor: pointer;
 
@@ -76,7 +76,7 @@ export const MenuItem = styled.li`
 
         border-radius: .25em;
 
-        color: #A1AA7F;
+        color: #fad4a0;
     }
 `;
 
@@ -88,22 +88,22 @@ export const ContactButton = styled.button`
     border: 1px solid transparent;
     border-radius: .25em;
 
-    background: #fad4a0;
+    background: #A1AA7F;
 
     transition: all 300ms ease-in-out;
 
-    outline: 1px solid #fad4a0;
+    outline: 1px solid #A1AA7F;
 
     cursor: pointer;
 
     &:hover {
         outline-offset: 5px;
         
-        border-color: #fad4a0;
+        border-color: #A1AA7F;
 
-        background: #fad4a050;
+        background: #A1AA7F50;
 
-        color: #F4E3B7;
+        color: #A1AA7F;
     }
 
     @media (max-width: 480px) {
@@ -120,7 +120,7 @@ export const MenuBurguer = styled.button`
     border: 0;
     border-radius: .25em;
 
-    background: #F8B396;
+    background: #A1AA7F;
 
     @media (max-width: 480px) {
         display: block;

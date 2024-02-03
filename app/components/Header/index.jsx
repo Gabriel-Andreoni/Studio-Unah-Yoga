@@ -32,7 +32,7 @@ export default function Header() {
                 <S.MenuBurguer onClick={handleMobileMenu}>
                     <TiThMenu
                         size="2em"
-                        color='#5D9EA2'
+                        color='#fad4a0'
                     />
                 </S.MenuBurguer>
             </S.Header>

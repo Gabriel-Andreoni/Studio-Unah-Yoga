@@ -1,4 +1,6 @@
 import * as S from './styles';
+import Image from 'next/image';
+import ServiceListImage from '/public/service-list-img.png'
 
 const services = [
     {
@@ -54,6 +56,8 @@ export default function Services() {
                 {services.map((service) => {
                     return (
                         <S.ServiceListItem key={service.id}>
+                            <Image src={ServiceListImage} alt="Imagem de uma pessoa em posição de yoga" width="307" height="200" quality={100} />
+
                             <S.ServiceItemTitle>{service.title}</S.ServiceItemTitle>
                             <S.ServiceItemSubtitle>{service.subtitle}</S.ServiceItemSubtitle>
                             <S.ServiceItemText>{service.description}</S.ServiceItemText>

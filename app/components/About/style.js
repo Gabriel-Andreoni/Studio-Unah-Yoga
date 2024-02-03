@@ -8,7 +8,7 @@ export const AboutWrapper = styled.div`
 
     display: flex;
 
-    background: #fad4a0;
+    background: #a1aa7f;
 
     @media (max-width: 480px) {
         height: auto;
@@ -39,9 +39,9 @@ export const AboutContent = styled.section`
 export const AboutTitle = styled.h2`
     width: 100%;
 
-    margin-top: 1em;
-
-    font-size: 4em;
+    font-family: 'Carattere', cursive;
+    font-size: 6em;
+    font-weight: normal;
     text-align: left;
 
     position: relative;
@@ -60,7 +60,7 @@ export const AboutTitle = styled.h2`
 
         border-radius: .25em;
 
-        background: #A1AA7F;
+        background: #fad4a0;
     }
 
     @media (max-width: 480px) {
