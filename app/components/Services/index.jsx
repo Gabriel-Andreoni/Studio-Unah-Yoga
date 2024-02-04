@@ -50,22 +50,24 @@ const extraServices = [
 export default function Services() {
     return (
         <S.ServicesContainer>
-            <S.ServicesTitle>Serviços</S.ServicesTitle>
+            <S.ServicesBigTitle>
+                <S.ServicesTitle>Serviços</S.ServicesTitle>
+            </S.ServicesBigTitle>
 
-            <S.ServicesList>
-                {services.map((service) => {
-                    return (
-                        <S.ServiceListItem key={service.id}>
-                            <Image src={ServiceListImage} alt="Imagem de uma pessoa em posição de yoga" width="307" height="200" quality={100} />
+            <S.ServicesContent>
+                <S.ServicesList>
+                    {services.map((service) => {
+                        return (
+                            <S.ServiceListItem key={service.id}>
+                                <S.ServiceItemTitle>{service.title}</S.ServiceItemTitle>
+                                <S.ServiceItemSubtitle>{service.subtitle}</S.ServiceItemSubtitle>
+                                <S.ServiceItemText>{service.description}</S.ServiceItemText>
+                            </S.ServiceListItem>
+                        )
+                    })}
+                </S.ServicesList>
+            </S.ServicesContent>
 
-                            <S.ServiceItemTitle>{service.title}</S.ServiceItemTitle>
-                            <S.ServiceItemSubtitle>{service.subtitle}</S.ServiceItemSubtitle>
-                            <S.ServiceItemText>{service.description}</S.ServiceItemText>
-                        </S.ServiceListItem>
-                    )
-                })}
-            </S.ServicesList>
-           
         </S.ServicesContainer>
     )
 }
