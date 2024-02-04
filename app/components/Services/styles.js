@@ -16,12 +16,14 @@ export const ServicesBigTitle = styled.div`
     width: 50%;
     height: 100%;
 
+    position: relative;
+
 `;
 
 export const ServicesTitle = styled.h1`
     width: 100%;
 
-    margin-top: 1em;
+    margin-top: .3em;
 
     font-family: 'Carattere', cursive;
     font-size: 10em;
@@ -66,6 +68,10 @@ export const ServiceListItem = styled.li`
     background: #a1aa7f80;
 
     transition: all 300ms ease;
+
+    position: relative;
+
+    overflow: hidden;
 
     &:hover {
         translate: 0 -5%;

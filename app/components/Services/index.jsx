@@ -1,6 +1,7 @@
 import * as S from './styles';
 import Image from 'next/image';
-import ServiceListImage from '/public/service-list-img.png'
+import ServiceBigTitleImg from '/public/service-big-title-img.png';
+import CardListImg from '/public/card-services-img.png';
 
 const services = [
     {
@@ -51,6 +52,14 @@ export default function Services() {
     return (
         <S.ServicesContainer>
             <S.ServicesBigTitle>
+                <Image style={{
+                    position: 'absolute',
+                    top: '20%',
+                    inset: 0,
+                    margin: '0 auto'
+
+                }} src={ServiceBigTitleImg} alt='Imagem de uma pessoa em posição de yoga' width='500' height='500' />
+
                 <S.ServicesTitle>Serviços</S.ServicesTitle>
             </S.ServicesBigTitle>
 
@@ -59,6 +68,12 @@ export default function Services() {
                     {services.map((service) => {
                         return (
                             <S.ServiceListItem key={service.id}>
+                                <Image style={{
+                                        position: 'absolute',
+                                        top: '-80%',
+                                        right: '-29%',
+                                        rotate: '225deg'
+                                }} src={CardListImg} alt='Imagem de uma lotus' width='500' height='500' />
                                 <S.ServiceItemTitle>{service.title}</S.ServiceItemTitle>
                                 <S.ServiceItemSubtitle>{service.subtitle}</S.ServiceItemSubtitle>
                                 <S.ServiceItemText>{service.description}</S.ServiceItemText>
