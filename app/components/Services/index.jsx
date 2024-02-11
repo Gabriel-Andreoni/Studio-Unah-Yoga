@@ -24,30 +24,29 @@ const services = [
         subtitle: 'Yoga Tranquilo',
         description: 'Para quem deseja desacelerar e se reconectar. Menos posturas, quietude e voltando para a restauração do corpo, da mente e das emoções.'
     },
-]
 
-const extraServices = [
     {
-        id: 1,
+        id: 4,
         title: 'Postura?',
         subtitle: 'Surya Namaskar',
         description: 'Saudação ao Sol. Sequencia de 12 posturas do hatha yoga que combinam respiração e movimento, para quem deseja se echer de energia e vitalidade.'
     },
 
     {
-        id: 2,
+        id: 5,
         title: 'Autoconhecimento?',
         subtitle: 'Meditação',
         description: 'Um processo de autoconhecimento para quem deseja trazer mais consciência de si e uma melhor relação com seu universo particular.'
     },
 
     {
-        id: 3,
+        id: 6,
         title: 'Aprofundar?',
         subtitle: 'Técnicas de Postura',
         description: 'Para quem deseja se aprofundar na consciência corporal e aprimoramento físico.'
     }
 ]
+
 
 const StyledImage = styled(Image)`
     position: absolute;
