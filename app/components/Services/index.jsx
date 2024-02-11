@@ -89,6 +89,7 @@ export default function Services() {
                     width="500"
                     height="500"
                     alt="Imagem de uma pessoa em posição de yoga"
+                    loading="lazy"
                 />
 
                 <S.ServicesTitle>Serviços</S.ServicesTitle>
@@ -104,6 +105,7 @@ export default function Services() {
                                     width="500"
                                     height="500"
                                     alt="Imagem de uma flor de lotus"
+                                    loading="lazy"
 
                                 />
                                 <S.ServiceItemTitle>{service.title}</S.ServiceItemTitle>

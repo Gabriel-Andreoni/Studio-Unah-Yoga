@@ -16,7 +16,7 @@ export default function Hero() {
                 </S.HeroApresentation>
 
                 <S.HeroImage>
-                    <Image src={HeroImage} alt="foto de uma moça em posição de yoga" width="500" height="500" />
+                    <Image src={HeroImage} alt="foto de uma moça em posição de yoga" width="500" height="500" loading="lazy" />
                 </S.HeroImage>
 
             </S.HeroContainer>

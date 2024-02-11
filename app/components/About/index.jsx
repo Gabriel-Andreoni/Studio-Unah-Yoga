@@ -23,7 +23,7 @@ export default function About() {
             </S.AboutContent>
 
             <S.AboutImage>
-                <Image src={AboutImage} alt="Imagem de uma mandala" width="400" height="400" />
+                <Image src={AboutImage} alt="Imagem de uma mandala" width="400" height="400" loading='lazy' />
             </S.AboutImage>
         </S.AboutWrapper>
     )
