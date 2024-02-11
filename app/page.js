@@ -2,6 +2,7 @@
 
 import About from './components/About';
 import Hero from './components/Hero';
+import Products from './components/Products';
 import Services from './components/Services';
 import * as S from './styles'; 
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <Products />
     </S.MainContainer>
   )
 }
