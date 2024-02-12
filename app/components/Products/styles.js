@@ -37,9 +37,8 @@ export const ProductItem = styled.li`
     display: flex;
     flex-direction: column;
 
+    border-bottom: 2px solid #A1AA7F;
     border-radius: .25em;
-
-    background: #f4f4f450;
 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
