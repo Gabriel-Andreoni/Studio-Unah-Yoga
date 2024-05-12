@@ -1,12 +1,13 @@
 import Image from "next/image";
+import { Menu11Icon } from '@hugeicons/react-pro';
 import './styles.css';
+
 
 export default function Header() {
     return (
         <header className="header-container">
-            <button className="button-mobile">
-                |
-            </button>            <nav className="nav-wrapper">
+            <Menu11Icon size={24} color="black" />
+            <nav className="nav-wrapper">
                 <ul className="menu-wrapper">
                     <li className="menu-item">Home</li>
                     <li className="menu-item">Sobre</li>
