@@ -1,0 +1,50 @@
+.header-container {
+    width: 30%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #00000010;
+
+    position: relative;
+
+    .nav-wrapper {
+        width: 50%;
+        height: 100%;
+
+        .menu-wrapper {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3em;
+            align-items: center; 
+
+            list-style: none;
+
+            .menu-item {
+                font-size: 1.5em;
+
+                cursor: pointer;
+            }
+        }
+    }
+
+    .button-mobile {
+        width: 10%;
+        height: 10%;
+
+        border: 1px solid red;
+        border-radius: .5em;
+
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        
+    }
+}
