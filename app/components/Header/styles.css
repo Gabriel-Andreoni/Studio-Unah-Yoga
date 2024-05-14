@@ -1,3 +1,7 @@
+.hide {
+    display: none
+}
+
 .header-container {
     width: 30%;
     height: 100vh;
@@ -10,6 +14,10 @@
     background: #00000010;
 
     position: relative;
+
+    animation: fadeinLeft 300ms linear;
+
+   
 
     .nav-wrapper {
         width: 50%;
@@ -48,3 +56,58 @@
         
     }
 }
+
+.menu-icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    
+    font-size: 4em;
+
+    cursor: pointer;
+
+    transition: all 300ms ease;
+
+    &:hover {
+        rotate: 0.05turn;
+        scale: .8;
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        translate: 0% 0%;
+        opacity: 1;
+    }
+
+    50% {
+        transalte: -50% 0%;
+        opacity: .5;
+    }
+
+    100% {
+        translate: -100% 0%;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeinLeft {
+    0% {
+        translate: -100% 0%;
+        opacity: 0;
+    }
+
+    50% {
+        translate: -50% 0%;
+        opacity: .5;
+    }
+
+    100% {
+        translate: 0% 0%;
+        opacity: 1;
+    }
+
+    
+}
+
