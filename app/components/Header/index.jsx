@@ -10,9 +10,9 @@ import './styles.css';
 export default function Header() {
     const [isActive, setIsActive] = useState(false);
     return (
-        <div>
+        <div className="header-wrapper">
             <RiMenu3Fill className={`${isActive ? 'hide' : 'menu-icon'}`} onClick={() => setIsActive((prevState) => !prevState)} />
-             <header className={`${isActive ? 'header-container' : 'hide'}`}>
+             <header className={`${isActive ? 'header-container' : 'hide-header'}`}>
             <IoMdClose className="menu-icon" onClick={() => setIsActive((prevState) => !prevState)} />
             <nav className="nav-wrapper">
 
