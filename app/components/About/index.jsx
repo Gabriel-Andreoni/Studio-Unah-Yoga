@@ -1,10 +1,13 @@
 import './styles.css';
 
+import Image from 'next/image';
+import AboutImage from '/public/about-img.jpg'
+
 export default function About() {
     return (
         <section className="about-wrapper">
             <div className="about-image">
-                
+                <Image src={AboutImage} alt="" width="500" height="500"/>
             </div>
             <div className="about-apresentation">
                 <h2>Onde você recuperar suas energias?</h2>
