@@ -40,7 +40,7 @@ export default function Services() {
     return (
         <section className="services-wrapper">
             <div className="services-header">
-                <h1>Produtos</h1>
+                <h1>Serviços</h1>
             </div>
             <div className="services-content">
                 <ul>
