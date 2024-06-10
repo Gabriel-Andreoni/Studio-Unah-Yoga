@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import { IoMdClose } from "react-icons/io";
 import './styles.css';
 
 const modalidades = [
@@ -76,17 +77,23 @@ const modalidadesExtras = [
     },
 ];
 
-function LoopedServices({ serviceArray, activeID, setActiveID }) {
+function LoopedServices({ serviceArray, activeID, setActiveID, isHide,  setIsHide }) {
     return (
         <>
             {serviceArray.map((service) => (
                 <li
                     key={service.id}
-                    className={`services-card ${activeID === service.id ? 'active' : ''}`}
+                    className={`services-card ${activeID === service.id ? 'active' : ''} ${isHide === service.id ? 'hidden' : ''}`}
                     onClick={() => setActiveID(service.id)}
                 >
                     <h2>{service.title}</h2>
                     <h3>{service.subtitle}</h3>
+
+                <IoMdClose className={`close-icon ${activeID === service.id ? 'active' : ''}`}  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsHide(service.id);
+                    setActiveID(null);
+                }}/>
                 </li>
             ))}
         </>
@@ -95,6 +102,7 @@ function LoopedServices({ serviceArray, activeID, setActiveID }) {
 
 export default function Services() {
     const [activeID, setActiveID] = useState(null);
+    const [isHide, setIsHide] = useState(false);
 
 
     return (
@@ -106,11 +114,15 @@ export default function Services() {
                         serviceArray={modalidades}
                         activeID={activeID}
                         setActiveID={setActiveID}
+                        isHide={isHide}
+                        setIsHide={setIsHide}
                     />
                     <LoopedServices
                         serviceArray={modalidadesExtras}
                         activeID={activeID}
                         setActiveID={setActiveID}
+                        isHide={isHide}
+                        setIsHide={setIsHide}
                     />
                 </ul>
             </div>
