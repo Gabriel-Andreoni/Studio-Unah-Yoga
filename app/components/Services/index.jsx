@@ -76,16 +76,17 @@ const modalidadesExtras = [
     },
 ];
 
-function LoopedServices({ serviceArray, isActive, toogleActiveState }) {
+function LoopedServices({ serviceArray, activeID, setActiveID }) {
     return (
         <>
             {serviceArray.map((service) => (
                 <li
                     key={service.id}
-                    className={`services-card ${isActive ? 'active' : ''}`}
-                    onMouseEnter={toogleActiveState(service.id)}
+                    className={`services-card ${activeID === service.id ? 'active' : ''}`}
+                    onClick={() => setActiveID(service.id)}
                 >
                     <h2>{service.title}</h2>
+                    <h3>{service.subtitle}</h3>
                 </li>
             ))}
         </>
@@ -93,11 +94,8 @@ function LoopedServices({ serviceArray, isActive, toogleActiveState }) {
 }
 
 export default function Services() {
-    const [isActive, setIsActive] = useState(false);
+    const [activeID, setActiveID] = useState(null);
 
-    const toogleActiveState = (cardID) => {
-        setIsActive(!cardID);
-    };
 
     return (
         <section className="services-wrapper">
@@ -106,13 +104,13 @@ export default function Services() {
                 <ul className="services-list">
                     <LoopedServices
                         serviceArray={modalidades}
-                        isActive={isActive}
-                        toogleActiveState={toogleActiveState}
+                        activeID={activeID}
+                        setActiveID={setActiveID}
                     />
                     <LoopedServices
                         serviceArray={modalidadesExtras}
-                        isActive={isActive}
-                        toogleActiveState={toogleActiveState}
+                        activeID={activeID}
+                        setActiveID={setActiveID}
                     />
                 </ul>
             </div>
