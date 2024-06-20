@@ -11,8 +11,9 @@ const modalidades = [
         subtitle: 'Yoga Ativo',
         description: (
             <>
-                <h3>Para os que buscam se desafiar</h3>
+                <h4>Para os que buscam se desafiar</h4>
                 <p>Proposta de meditação em movimento, unindo posturas e respiração <br />Aprimora o corpo físico, a capacidade respiratória e senso de autoconfiança.</p>
+                <button>Conheça-já</button>
             </>
         ),
         image: '',
@@ -23,8 +24,9 @@ const modalidades = [
         subtitle: 'Yoga Presente',
         description: (
             <>
-                <h3>Ideal para iniciantes.</h3>
+                <h4>Ideal para iniciantes.</h4>
                 <p>Proposta de pausa e presença, posturas que trazem consciência de si, sintoniza corpo e mente. <br /> Podendo ser desafiador e aterrado.</p>
+                <button>Conheça-já</button>
             </>
         ),
     },
@@ -34,8 +36,9 @@ const modalidades = [
         subtitle: 'Yoga Tranquilo',
         description: (
             <>
-                <h3>Para quem deseja desacelerar e se reconectar.</h3>
+                <h4>Para quem deseja desacelerar e se reconectar.</h4>
                 <p>Menos posturas, quietude e voltado para a restauração do corpo, da mente e das emoções.</p>
+                <button>Conheça-já</button>
             </>
         ),
     },
@@ -48,8 +51,9 @@ const modalidadesExtras = [
         subtitle: "Surya Namaskar",
         description: (
             <>
-                <h3>Saudação ao Sol.</h3>
+                <h4>Saudação ao Sol.</h4>
                 <p>Sequência de 12 posturas do hathia yoga que combinam respiração e movimento, para quem deseja se encher de energia e vitalidade.</p>
+                <button>Conheça-já</button>
             </>
         ),
     },
@@ -59,8 +63,9 @@ const modalidadesExtras = [
         subtitle: "Meditação",
         description: (
             <>
-                <h3></h3>
+                <h4></h4>
                 <p>Um processo de autoconhecimento para quem deseja trazer mais consciência de si e uma melhor relação com seu universo particular.</p>
+                <button>Conheça-já</button>
             </>
         ),
     },
@@ -70,28 +75,29 @@ const modalidadesExtras = [
         subtitle: "Técnicas de Postura",
         description: (
             <>
-                <h3></h3>
+                <h4></h4>
                 <p>Para quem deseja se aprofundar na consciência corporal e aprimoramento físico.</p>
+                <button>Conheça-já</button>
             </>
         ),
     },
 ];
 
-function LoopedServices({ serviceArray, activeID, setActiveID, isHide,  setIsHide }) {
+function LoopedServices({ serviceArray, activeID, setActiveID}) {
     return (
         <>
             {serviceArray.map((service) => (
                 <li
                     key={service.id}
-                    className={`services-card ${activeID === service.id ? 'active' : ''} ${isHide === service.id ? 'hidden' : ''}`}
+                    className={`services-card ${activeID === service.id ? 'active' : ''}`}
                     onClick={() => setActiveID(service.id)}
                 >
                     <h2>{service.title}</h2>
                     <h3>{service.subtitle}</h3>
+                    <div>{service.description}</div>
 
                 <IoMdClose className={`close-icon ${activeID === service.id ? 'active' : ''}`}  onClick={(e) => {
                     e.stopPropagation();
-                    setIsHide(service.id);
                     setActiveID(null);
                 }}/>
                 </li>
@@ -102,7 +108,6 @@ function LoopedServices({ serviceArray, activeID, setActiveID, isHide,  setIsHid
 
 export default function Services() {
     const [activeID, setActiveID] = useState(null);
-    const [isHide, setIsHide] = useState(false);
 
 
     return (
@@ -114,15 +119,11 @@ export default function Services() {
                         serviceArray={modalidades}
                         activeID={activeID}
                         setActiveID={setActiveID}
-                        isHide={isHide}
-                        setIsHide={setIsHide}
                     />
                     <LoopedServices
                         serviceArray={modalidadesExtras}
                         activeID={activeID}
                         setActiveID={setActiveID}
-                        isHide={isHide}
-                        setIsHide={setIsHide}
                     />
                 </ul>
             </div>
