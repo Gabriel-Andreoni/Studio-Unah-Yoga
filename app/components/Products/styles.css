@@ -5,6 +5,18 @@
     background-color: purple;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+
+    .products-title {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .products-content {
+        width: 50%;
+        height: auto;
+    }
 }
