@@ -63,7 +63,7 @@ const modalidadesExtras = [
         subtitle: "Meditação",
         description: (
             <>
-                <h4></h4>
+                <h4>Meditação</h4>
                 <p>Um processo de autoconhecimento para quem deseja trazer mais consciência de si e uma melhor relação com seu universo particular.</p>
                 <button>Conheça-já</button>
             </>
@@ -75,7 +75,7 @@ const modalidadesExtras = [
         subtitle: "Técnicas de Postura",
         description: (
             <>
-                <h4></h4>
+                <h4>Técnicas de Postura</h4>
                 <p>Para quem deseja se aprofundar na consciência corporal e aprimoramento físico.</p>
                 <button>Conheça-já</button>
             </>
@@ -93,7 +93,6 @@ function LoopedServices({ serviceArray, activeID, setActiveID}) {
                     onClick={() => setActiveID(service.id)}
                 >
                     <h2>{service.title}</h2>
-                    <h3>{service.subtitle}</h3>
                     <div>{service.description}</div>
 
                 <IoMdClose className={`close-icon ${activeID === service.id ? 'active' : ''}`}  onClick={(e) => {
